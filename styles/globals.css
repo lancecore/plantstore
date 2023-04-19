@@ -7,10 +7,10 @@ body {
 }
 
 .button {
-	@apply inline-block mt-6 py-4 px-8 rounded-full uppercase bg-newpurple-900 hover:bg-newpurple-950 text-newgreen-50 hover:text-white cursor-pointer tracking-wider;
+	@apply inline-block py-4 px-8 rounded-full uppercase bg-newpurple-900 hover:bg-newpurple-950 text-newgreen-50 hover:text-white cursor-pointer tracking-wider;
 	transition: all 0.2s ease-in-out;
 }
 
 .hero .button {
-	@apply py-6 px-16 bg-newgreen-700 hover:bg-newpurple-950 text-newpurple-950 hover:text-newgreen-700 font-semibold tracking-widest;
+	@apply mt-6 py-6 px-16 bg-newgreen-700 hover:bg-newpurple-950 text-newpurple-950 hover:text-newgreen-700 font-semibold tracking-widest;
 }

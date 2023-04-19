@@ -6,8 +6,8 @@ import { FaAngleRight } from 'react-icons/fa';
 export default function Hero() {
 	return (
 		<section className="hero min-h-[24rem] flex justify-center items-center">
-			<div className="w-1/2 overflow-hidden">
-				<Image src={bigPlant} alt="Photo of a plant" className="" />
+			<div className="w-1/2 ">
+				<Image src={bigPlant} alt="Photo of a plant" className="block ml-2" />
 			</div>
 			<div className="w-1/2">
 				<h2 className="text-9xl font-bold text-stone-50">Cool New Plants at Cool New Prices</h2>

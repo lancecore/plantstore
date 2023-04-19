@@ -12,8 +12,8 @@ export default function Layout(props) {
 					</Link>
 				</p>
 				<p>
-					<Link href="/about" scroll={false} className="hover:text-newgreen-600 transition-all ease-in-out duration-200">
-						About
+					<Link href="/contact" scroll={false} className="hover:text-newgreen-600 transition-all ease-in-out duration-200">
+						Contact
 					</Link>
 				</p>
 			</div>
