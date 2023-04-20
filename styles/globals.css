@@ -4,6 +4,23 @@
 
 body {
 	@apply bg-gradient-to-b from-newpurple-700 to-newpurple-600;
+	position: relative;
+}
+
+main::after {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	content: "";
+	height: 700px;
+	width: 700px;
+	background-image: url(/img/bgplant2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 150%;
+	z-index: -1;
+	opacity: 0.5;
+	filter: saturate(50%) brightness(150%) contrast(25%);
 }
 
 .button {
@@ -11,6 +28,6 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
-.hero .button {
-	@apply mt-6 py-6 px-16 bg-newgreen-700 hover:bg-newpurple-950 text-newpurple-950 hover:text-newgreen-700 font-semibold tracking-widest;
+.hero .button, .button.checkout {
+	@apply mt-6 py-6 px-16 bg-newpink-500 hover:bg-newpurple-950 text-newpurple-950 hover:text-newpink-500 font-semibold tracking-widest;
 }

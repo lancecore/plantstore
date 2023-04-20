@@ -32,7 +32,7 @@ export default function Layout(props) {
 					</Link>
 				</p>
 				<p>
-					<Link href="/cart" scroll={false} className="flex items-start gap-x-1 after:content-['2'] after:font-normal">
+					<Link href="/cart" scroll={false} className="flex items-start gap-x-1 after:content-['3'] after:font-normal">
 						<RiShoppingCart2Fill className="h-5 w-5 hover:text-newgreen-600 transition-all ease-in-out duration-200" />
 					</Link>
 				</p>
