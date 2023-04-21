@@ -34,7 +34,7 @@ export default function SinglePlant({ plant }) {
 			opacity: [1, 1, 1, 1, 1, 0],
 			rotateZ: [360, 0, 0, 360],
 			transition: {
-				duration: 1.4,
+				duration: 1.2,
 			},
 		});
 		mainRef.current.classList.add('blurred');
@@ -60,7 +60,7 @@ export default function SinglePlant({ plant }) {
 				</div>
 			</main>
 			<motion.div className="absolute top-[50%] left-[50%] opacity-0" animate={divControls} onAnimationComplete={onEnd}>
-				<Check className="h-24 w-24 text-newgreen-700 z-10 blur-none" />
+				<Check className="h-24 w-24 text-newgreen-700 z-10" />
 			</motion.div>
 		</Layout>
 	);

@@ -189,11 +189,11 @@ export default function Cart() {
 				</div>
 			</main>
 			<motion.div animate={divControls} className="hidden" ref={coverRef}>
-				<div className="flex justify-center items-center p-12 text-center text-newpurple-950" onClick={closeAni}>
-					<div>
-						<h3 className="text-9xl font-semibold">If this were a real store, you’d be checking out right now!</h3>
-						<p className="mt-4 cursor-pointer text-xl">[Okay, close this now.]</p>
-					</div>
+				<div className="flex justify-center items-center p-12 ml-28 text-left text-newpurple-950 cursor-pointer" onClick={closeAni}>
+					<h3 className="text-9xl font-semibold">
+						If this were a real store, you’d be checking out right now!
+						<span className="inline-block ml-8 text-xl font-normal">[Okay, click anywhere to close this.]</span>
+					</h3>
 				</div>
 			</motion.div>
 		</Layout>
