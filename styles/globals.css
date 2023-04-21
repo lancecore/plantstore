@@ -29,5 +29,30 @@ main::after {
 }
 
 .hero .button, .button.checkout {
-	@apply mt-6 py-6 px-16 bg-newpink-500 hover:bg-newpurple-950 text-newpurple-950 hover:text-newpink-500 font-semibold tracking-widest;
+	@apply mt-6 py-6 px-16 bg-newpink-500 hover:bg-newpurple-950 text-newpurple-950 hover:text-newpink-500 font-semibold tracking-widest border-2 border-newpurple-950;
+}
+
+main.blurred {
+	
+}
+
+main.blurred::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	content: " ";
+	opacity: 0.5;
+	@apply bg-newpurple-200;
+	z-index: 1;
+}
+
+.cover {
+	@apply block fixed top-0 left-0 w-full h-full overflow-y-hidden;
+	backdrop-filter: blur(4px);
+}
+
+.cover > div {
+	@apply h-screen;
 }

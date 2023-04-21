@@ -13,6 +13,7 @@ export default function Hero() {
 						rotateZ: '-2deg',
 						scale: 1.1,
 					}}
+					transition={{ type: 'spring', duration: 0.5, bounce: 0.5 }}
 				>
 					<Image src={bigPlant} alt="Photo of a plant" className="block ml-auto" />
 				</motion.div>
