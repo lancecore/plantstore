@@ -8,7 +8,7 @@ export default function Hero() {
 	const friendVariants = {
 		offscreen: {
 			rotateZ: 0,
-			scale: 0.8,
+			scale: 0.5,
 		},
 		onscreen: {
 			rotateZ: '-2deg',
@@ -27,7 +27,7 @@ export default function Hero() {
 				<motion.div
 					initial="offscreen"
 					whileInView="onscreen"
-					viewport={{ once: false, amount: 0.8 }}
+					viewport={{ once: true, amount: 0.1 }}
 					whileHover={{
 						rotateZ: '-3deg',
 						scale: 1.1,
