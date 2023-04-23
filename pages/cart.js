@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion, useAnimation, useAnimationControls } from 'framer-motion';
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import plant1 from '../public/img/plant2.png';

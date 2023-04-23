@@ -1,21 +1,42 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import bigPlant from '../public/img/plant2.png';
+import bigPlant from '../public/img/friend2.png';
 import { FaAngleRight } from 'react-icons/fa';
 
 export default function Hero() {
+	const friendVariants = {
+		offscreen: {
+			rotateZ: 0,
+			scale: 0.8,
+		},
+		onscreen: {
+			rotateZ: '-2deg',
+			scale: 1,
+			transition: {
+				type: 'spring',
+				bounce: 0.5,
+				duration: 0.5,
+				delay: 0.1,
+			},
+		},
+	};
 	return (
 		<section className="hero min-h-[24rem] flex justify-center items-center">
 			<div className="w-1/2">
 				<motion.div
+					initial="offscreen"
+					whileInView="onscreen"
+					viewport={{ once: false, amount: 0.8 }}
 					whileHover={{
-						rotateZ: '-2deg',
+						rotateZ: '-3deg',
 						scale: 1.1,
 					}}
 					transition={{ type: 'spring', duration: 0.5, bounce: 0.5 }}
 				>
-					<Image src={bigPlant} alt="Photo of a plant" className="block ml-auto" />
+					<motion.div variants={friendVariants}>
+						<Image src={bigPlant} alt="Photo of a plant" className="block ml-auto" />
+					</motion.div>
 				</motion.div>
 			</div>
 			<div className="w-1/2">

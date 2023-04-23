@@ -7,6 +7,10 @@ body {
 	position: relative;
 }
 
+ul {
+	list-style: circle;
+}
+
 main::after {
 	position: absolute;
 	bottom: 0;
@@ -46,9 +50,27 @@ main.blurred::before {
 
 .cover {
 	@apply block fixed top-0 left-0 w-full h-full overflow-y-hidden;
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px) contrast(0.7) saturate(0.5) brightness(1.2);
 }
 
 .cover > div {
 	@apply h-screen;
+}
+
+.longdesc h4 {
+	@apply text-xl font-semibold;	
+}
+
+footer {
+	position: relative;
+	overflow-y: hidden;
+}
+
+.footer-friend {
+	background-image: url('/img/friend3.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	@apply w-40 h-40;
+	position: absolute;
+	left: 33%;
 }

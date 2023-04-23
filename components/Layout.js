@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export default function Layout(props) {
 	return (
@@ -28,6 +29,7 @@ export default function Layout(props) {
 				}}
 			>
 				{props.children}
+				<Footer />
 			</motion.div>
 		</>
 	);
