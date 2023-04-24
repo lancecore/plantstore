@@ -111,7 +111,7 @@ export default function SinglePlant({ plant }) {
 					</motion.div>
 					<section className="flex flex-col justify-between">
 						<div className="longdesc flex flex-col gap-y-4 text-lg">{parse(plant.longerDesc)}</div>
-						<p className="mt-6 font-bold tracking-widest text-5xl">${plant.price}</p>
+						<p className="mt-8 font-bold tracking-widest text-5xl">${plant.price}</p>
 						<motion.div
 							className="self-start"
 							whileHover={{

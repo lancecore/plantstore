@@ -32,7 +32,7 @@ main::after {
 	transition: all 0.2s ease-in-out;
 }
 
-.hero .button, .button.checkout {
+.hero .button, .button.checkout, .bigbutton {
 	@apply mt-6 py-6 px-16 bg-newpink-500 hover:bg-newpurple-950 text-newpurple-950 hover:text-newpink-500 font-semibold tracking-widest border-2 border-newpurple-950;
 }
 
@@ -58,7 +58,11 @@ main.blurred::before {
 }
 
 .longdesc h4 {
-	@apply text-xl font-semibold;	
+	@apply text-xl font-semibold;
+}
+
+.longdesc h4:last-of-type {
+	@apply mt-8;
 }
 
 footer {
