@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Store from '../components/Store';
+import Info from '../components/Info';
 import { FaAngleRight } from 'react-icons/fa';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 						Shop All Plants <FaAngleRight className="inline-block -mt-[2px] h-5 w-5" />
 					</Link>
 				</p>
+				<Info />
 			</main>
 		</Layout>
 	);
