@@ -8,7 +8,7 @@ export default function Home() {
 		<Layout>
 			<main className="flex min-h-screen flex-col items-center justify-between p-24">
 				<Hero />
-				<Store />
+				<Store items={3} />
 			</main>
 		</Layout>
 	);
