@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Store from '../components/Store';
 import Info from '../components/Info';
+import Consult from '../components/Consult';
 import { FaAngleRight } from 'react-icons/fa';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 					</Link>
 				</p>
 				<Info />
+				<Consult />
 			</main>
 		</Layout>
 	);
